@@ -1,0 +1,127 @@
+:root {
+  --orange: #e35629;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto";
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+/* 
+
+
+-> Reset Style <-
+
+
+*/
+
+a {
+  text-decoration: none;
+}
+
+/* 
+
+
+-> Helper Class <-
+
+
+*/
+
+/* 
+
+
+-> App Style <-
+
+
+*/
+
+.header {
+  background: linear-gradient(rgba(9, 9, 9, 0.2), rgba(79, 79, 79, 0.1)),
+    url("../images/test-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.app-logo {
+}
+.app-logo__image {
+}
+.menu {
+  display: none;
+}
+.menu__item {
+}
+.menu-link {
+}
+.nav-menu {
+  display: none;
+}
+.mobile-menu {
+}
+.mobile-menu__item {
+}
+.mobile-menu__link {
+}
+.mobile-menu__links {
+}
+.mobile-menu__link {
+}
+.header__link--border {
+}
+.header__links {
+  display: none;
+}
+.header__link {
+}
+.header__link--border {
+}
+.nav__btn {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__btn-line {
+  display: block;
+  width: 2.2rem;
+  height: 0.22rem;
+  background-color: var(--orange);
+  border-radius: 1rem;
+  position: relative;
+}
+.nav__btn-line::before,
+.nav__btn-line::after {
+  content: " ";
+  position: absolute;
+  width: 2.2rem;
+  height: 0.22rem;
+  background-color: var(--orange);
+  border-radius: 1rem;
+}
+.nav__btn-line::before {
+  top: -0.7rem;
+}
+.nav__btn-line::after {
+  top: 0.7rem;
+}
