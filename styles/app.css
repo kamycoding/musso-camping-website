@@ -1,5 +1,6 @@
 :root {
   --orange: #e35629;
+  --white: #fff
 }
 
 html {
@@ -52,6 +53,9 @@ a {
     url("../images/test-bg.jpg");
   background-position: center;
   background-size: cover;
+  min-height: 55rem;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
 }
 
 .nav {
@@ -77,17 +81,38 @@ a {
 .menu-link {
 }
 .nav-menu {
-  display: none;
+  position: fixed;
+  background-color: #626262;
+  left: -25rem;
+  top: 0;
+  bottom: 0;
+  width: 25rem;
+  padding: 2.5rem;
+  transition: all 250ms ease-in-out;
+}
+.nav-menu--open {
+  left: 0;
 }
 .mobile-menu {
+  margin-bottom: 3rem;
 }
 .mobile-menu__item {
+  margin-bottom: 1rem;
 }
 .mobile-menu__link {
+  color: var(--white);
 }
-.mobile-menu__links {
+.nav-menu__links {
+  display: flex;
+  gap: 1rem;
 }
-.mobile-menu__link {
+.nav-menu__link  {
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: block;
+  padding: 1rem;
+  flex-grow: 1;
+  text-align: center;
 }
 .header__link--border {
 }
@@ -99,7 +124,7 @@ a {
 .header__link--border {
 }
 .nav__btn {
-  background-color: #fff;
+  background-color: var(--white);
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 2rem;
@@ -109,7 +134,7 @@ a {
 }
 .nav__btn-line {
   display: block;
-  width: 2.2rem;
+  width: 2.5rem;
   height: 0.22rem;
   background-color: var(--orange);
   border-radius: 1rem;
@@ -120,15 +145,25 @@ a {
 .nav__btn-line::after {
   content: " ";
   position: absolute;
-  width: 2.2rem;
+  width: 2.5rem;
   height: 0.22rem;
   background-color: var(--orange);
   border-radius: 1rem;
-  transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .nav__btn-line::before {
   top: -0.7rem;
 }
 .nav__btn-line::after {
   top: 0.7rem;
+}
+
+.nav__btn--open .nav__btn-line {
+  background-color: transparent;
+}
+.nav__btn--open .nav__btn-line::before {
+  transform:translateY(5.6px) rotate(45deg);
+}
+.nav__btn--open .nav__btn-line::after {
+  transform:translateY(-8px) rotate(-45deg);
 }
