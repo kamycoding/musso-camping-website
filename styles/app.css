@@ -61,8 +61,13 @@ a {
   padding: 1rem 0;
 }
 .app-logo {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
 }
 .app-logo__image {
+  width: 100%;
+  height: 100%;
 }
 .menu {
   display: none;
@@ -95,8 +100,8 @@ a {
 }
 .nav__btn {
   background-color: #fff;
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -109,6 +114,7 @@ a {
   background-color: var(--orange);
   border-radius: 1rem;
   position: relative;
+  transition: all 250ms ease-in-out;
 }
 .nav__btn-line::before,
 .nav__btn-line::after {
@@ -118,6 +124,7 @@ a {
   height: 0.22rem;
   background-color: var(--orange);
   border-radius: 1rem;
+  transition: all 250ms ease-in-out;
 }
 .nav__btn-line::before {
   top: -0.7rem;
