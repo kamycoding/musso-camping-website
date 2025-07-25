@@ -1,0 +1,31 @@
+@media (min-width: 576px) {
+     
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+    .nav__btn {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .header__links {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 1400px) {
+
+}
